@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 80vh;
+    background-color: rgb(211, 196, 168);
+}
+main{
+    font-family: Arial, sans-serif;
+}
+nav{
+    display: flex;
+    position: fixed;
+    list-style-type: none;
+    background-color: pink;
+    height: 10vh;
+    position: relative;
+    z-index: 999;
+    top: 0%;
+}
+   
+ nav h1{
+    color: saddlebrown;
+    font-size: 35px;
+}
+li{
+    margin-left: 30%;
+    margin-top: 18px;
+}
+
+li a{
+    text-decoration: none;
+    color: saddlebrown;
+    font-size: 22px;
+    font-weight: bolder;
+}
+li a:hover{
+    background-color: palevioletred;
+    transition: all ease 0.5s;
+    border-radius: 16px;
+    padding: 8px;
+    font-size: 25px;
+    border: none;
+}
+.hero{
+    display: flex;
+    column-gap: 200px;
+}
+.hero-section{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+span{
+    color: saddlebrown;
+}
+.hero-section h1{
+    font-size: 45px;
+    font-weight: bolder;
+}
+.hero-section p{
+    font-size: 18px;
+    margin-top: 50px;
+}
+.hero img{
+    border-radius: 50%;
+    margin-right: 70px;
+    padding: 2px;
+    width: 600px;
+    height: 500px;
+    border: 9px solid palevioletred;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  li a {
+    font-size: 18px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    padding: 20px;
+  }
+
+  .hero-section {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 30px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .hero img {
+    width: 80%;
+    height: auto;
+    max-width: 350px;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 24px;
+  }
+
+  li a {
+    font-size: 16px;
+  }
+
+  .hero-section h1 {
+    font-size: 24px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+
+  .hero img {
+    max-width: 280px;
+    border-width: 6px;
+  }
+}
